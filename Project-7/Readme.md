@@ -1,2 +1,2 @@
 # Rento
-## A multipurposelanding page template 
+## A multipurpose landing page template 
