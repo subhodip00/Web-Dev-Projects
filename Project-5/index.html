@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>My Library</title>
+</head>
+
+<body>
+  <div class="container mt-4">
+    <form>
+      <h1 class="text-center">
+        <i class="fas fa-book-open text-info"></i><span class="text-muted">Subhodip's</span> Library
+      </h1>
+      <div class="row mb-3 mt-4" id = "form-start">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="add-book" placeholder="Book Name...">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Author</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="author-name" placeholder="Author Name...">
+        </div>
+      </div>
+      <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Genre</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Fiction" checked>
+            <label class="form-check-label" for="gridRadios1">
+              Fiction
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Mystery">
+            <label class="form-check-label" for="gridRadios2">
+              Mystery
+            </label>
+          </div>
+          <div class="form-check disabled">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="Programming">
+            <label class="form-check-label" for="gridRadios3">
+              Programming
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-lg btn-primary mt-4 pt-2 pb-2" id="submit">Submit</button>
+      </fieldset>
+      <!-- <button type="submit" class="btn btn-lg btn-primary">Submit</button> -->
+      <!-- <button class="btn btn-lg btn-primary"> -->
+    
+
+    <!-- Table -->
+
+    <table class="table">
+      <thead>
+        <tr>
+          <!-- <th scope="col">#</th> -->
+          <th scope="col">Name</th>
+          <th scope="col">Author</th>
+          <th scope="col">Genre</th>
+        </tr>
+      </thead>
+      <tbody id='book-table'>
+        <tr>
+          <!-- <th scope="row">1</th> -->
+          <td>Sherlock Holmes</td>
+          <td>Arthur Doyle</td>
+          <td>Mystery</td>
+          <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  </div>
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
