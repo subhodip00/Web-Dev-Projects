@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.btn-primary{
+    border-radius: 0;
+    padding: 10px 40px 10px 40px;
+    border:none;
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    background-color: #f6d601;
+    cursor: pointer;
+    transition: border-radius 0.5s ease-in-out;
+}
+
+.btn-primary:hover{
+    border-radius: 20px;
+}
+
+.round{
+    background-color: black;
+    /* color: #f6d601; */
+    color: white;
+    font-size: 30px;
+    padding: 30px;
+    border-radius: 50%;
+    border: 10px solid #f6d601;
+    margin-bottom: 30px;
+}
+
+/* NAVBAR */
+
+.navbar{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
+
+.nav-container{
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container .nav-items ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-container .nav-items li{
+    margin: 10px;
+    font-size: 20px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .nav-items li a{
+    text-decoration: none;
+}
+
+.nav-container .nav-items li:hover{
+    transform: translateY(-5px);
+}
+
+.btn{
+    border:none;
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    background-color: #f6d601;
+    padding: 10px 20px 10px 20px;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+}
+
+.logo span{
+    font-size: 40px;
+}
+#hamburger{
+    display: none;
+}
+/* BANNER */
+
+.banner{
+    background: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    text-align: center;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+}
+
+.banner h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.banner #white{
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.banner h2{
+    color: #f6d601;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.banner p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.banner .btn-primary{
+    color:black;
+    background-color: white;
+}
+
+.banner .btn-primary:hover{
+    background-color: #f6d601;
+}
+
+/* SHOWCASE */
+
+.showcase{
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.showcase-container{
+    max-width: 1500px;
+}
+
+.showcase-text h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.showcase-text p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.showcase-cartext{
+    margin-top: 10px;
+    background-color: #f6d601;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+/* QUOTE */
+.quote{
+    background: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    min-height: 700px;
+    color: #f6d601;
+    font-family:'Poppins',sans-serif ;
+}
+
+/* .form-control{
+    position: relative;
+}
+
+.quote-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 400px;
+    top :400px;
+
+} */
+
+.quote-container{
+    max-width: 1500px;
+    margin: auto;
+}
+
+.quote-text{
+    max-width: 40%;
+    text-align: center;
+    color: #fbff00e5;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quote-text h1{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.quote-inner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-control{
+    background-color: white;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    width: 600px;
+    height: 550px;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #f6d601;
+    color: black;
+}
+.form-items{
+    margin: 50px;
+}
+
+.form-items input{
+    border: 0;
+    border-bottom: 1px solid #b4bceb;
+    width: 100%;
+    padding: 3px;
+    outline-style: none;
+    font-size: 16px;
+}
+
+/* BENEFITS */
+.benefits-container{
+    max-width: 1500px;
+    font-family:'Poppins',sans-serif;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits-container h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.benefits-container #main{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.benefits-container p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* INFORMATION */
+.info{
+    background-color: black;
+}
+
+.info-container{
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    padding-top:20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.info-container p{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+}
+
+#info-des{
+    color: #f6d601;
+}
+
+/* MEDIA QUERIES */
+@media(max-width:768px){
+    .nav-container, .quote-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .quote-text{
+        display: none;
+    }
+    .form-control{
+        width: 80%;
+    }
+}
+
+@media(max-width:500px){
+    .nav-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    .nav-items{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+}
